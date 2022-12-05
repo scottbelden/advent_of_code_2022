@@ -11,9 +11,9 @@ def answer2(value):
     return value
 
 
-def get_input(filename):
+def get_input(filename, operation="strip"):
     with open(filename) as fp:
-        return [line.strip() for line in fp]
+        return [getattr(line, operation)() for line in fp]
 
 
 def get_input_as_int(filename):
