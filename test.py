@@ -12,6 +12,7 @@ import day_11
 import day_14
 import day_15
 import day_18
+import day_25
 
 
 def test_day_01():
@@ -82,3 +83,7 @@ def test_day_15():
 def test_day_18():
     assert day_18.ANSWER1 == 4348
     assert day_18.ANSWER2 == "Unfinished"
+
+
+def test_day_25():
+    assert day_25.ANSWER1 == "2=0-2-1-0=20-01-2-20"
